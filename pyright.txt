@@ -1,0 +1,199 @@
+pyright src
+
+
+/home/Nakeeb/Work/safehome/SafeHome/src/core/login/login_manager.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/login/login_manager.py:38:22 - error: Operator "+" not supported for "None" (reportOptionalOperand)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/login/login_manager.py:41:73 - error: Operator "-" not supported for types "datetime" and "datetime | None"
+    Operator "-" not supported for types "datetime" and "None" (reportOperatorIssue)
+/home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_database_interface.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_database_interface.py:9:37 - error: Function with declared return type "list[SecurityMode]" must return value on all code paths
+    "None" is not assignable to "list[SecurityMode]" (reportReturnType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_database_interface.py:29:30 - error: Function with declared return type "dict[InterfaceSensor, tuple[bool, bool | None]]" must return value on all code paths
+    "None" is not assignable to "dict[InterfaceSensor, tuple[bool, bool | None]]" (reportReturnType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_database_interface.py:49:37 - error: Function with declared return type "list[SecurityZone]" must return value on all code paths
+    "None" is not assignable to "list[SecurityZone]" (reportReturnType)
+/home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_manager.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_manager.py:73:12 - error: Operator "<=" not supported for types "Literal[0]" and "int | None"
+    Operator "<=" not supported for types "Literal[0]" and "None" (reportOperatorIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_manager.py:73:17 - error: Operator "<" not supported for "None" (reportOptionalOperand)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_manager.py:239:17 - error: Cannot assign to attribute "dateTime" for class "Log"
+    Attribute "dateTime" is unknown (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_manager.py:246:28 - error: Cannot access attribute "release" for class "InterfaceSensor"
+    Attribute "release" is unknown (reportAttributeAccessIssue)
+/home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_zone.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_zone.py:19:28 - error: "overlap" is not a known attribute of "None" (reportOptionalMemberAccess)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/security/security_zone.py:32:28 - error: "overlap" is not a known attribute of "None" (reportOptionalMemberAccess)
+/home/Nakeeb/Work/safehome/SafeHome/src/core/setting/system_setting_storage.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/setting/system_setting_storage.py:5:9 - warning: Instance methods should take a "self" parameter (reportSelfClsParameterName)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/setting/system_setting_storage.py:11:38 - error: Function with declared return type "SystemSettings" must return value on all code paths
+    "None" is not assignable to "SystemSettings" (reportReturnType)
+/home/Nakeeb/Work/safehome/SafeHome/src/core/surveillance/camera_controller.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/surveillance/camera_controller.py:68:23 - error: Tuple expression not allowed in type expression
+    Use tuple[T1, ..., Tn] to indicate a tuple type or T1 | T2 to indicate a union type (reportInvalidTypeForm)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/surveillance/camera_controller.py:248:29 - error: Argument of type "str | None" cannot be assigned to parameter "password" of type "str" in function "set_password"
+    Type "str | None" is not assignable to type "str"
+      "None" is not assignable to "str" (reportArgumentType)
+/home/Nakeeb/Work/safehome/SafeHome/src/core/surveillance/safehome_camera.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/surveillance/safehome_camera.py:52:41 - error: Tuple expression not allowed in type expression
+    Use tuple[T1, ..., Tn] to indicate a tuple type or T1 | T2 to indicate a union type (reportInvalidTypeForm)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/surveillance/safehome_camera.py:66:37 - error: Function with declared return type "int" must return value on all code paths
+    "None" is not assignable to "int" (reportReturnType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/surveillance/safehome_camera.py:91:61 - error: "LANCZOS" is not a known attribute of module "PIL.Image" (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/core/surveillance/safehome_camera.py:152:16 - error: Type "str | None" is not assignable to return type "str"
+    Type "str | None" is not assignable to type "str"
+      "None" is not assignable to "str" (reportReturnType)
+/home/Nakeeb/Work/safehome/SafeHome/src/device/device_camera.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_camera.py:51:9 - error: Method "get_id" overrides class "InterfaceCamera" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "int | Unknown"
+      Type "int | Unknown" is not assignable to type "None"
+        "int" is not assignable to "None" (reportIncompatibleMethodOverride)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_camera.py:55:9 - error: Method "get_view" overrides class "InterfaceCamera" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "Image"
+      "Image" is not assignable to "None" (reportIncompatibleMethodOverride)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_camera.py:89:69 - error: "LANCZOS" is not a known attribute of module "PIL.Image" (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_camera.py:118:9 - error: Method "pan_right" overrides class "InterfaceCamera" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "bool"
+      "bool" is not assignable to "None" (reportIncompatibleMethodOverride)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_camera.py:127:9 - error: Method "pan_left" overrides class "InterfaceCamera" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "bool"
+      "bool" is not assignable to "None" (reportIncompatibleMethodOverride)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_camera.py:136:9 - error: Method "zoom_in" overrides class "InterfaceCamera" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "bool"
+      "bool" is not assignable to "None" (reportIncompatibleMethodOverride)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_camera.py:145:9 - error: Method "zoom_out" overrides class "InterfaceCamera" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "bool"
+      "bool" is not assignable to "None" (reportIncompatibleMethodOverride)
+/home/Nakeeb/Work/safehome/SafeHome/src/device/device_motion_detector.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_motion_detector.py:8:31 - error: Tuple expression not allowed in type expression
+    Use tuple[T1, ..., Tn] to indicate a tuple type or T1 | T2 to indicate a union type (reportInvalidTypeForm)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_motion_detector.py:8:48 - error: Tuple expression not allowed in type expression
+    Use tuple[T1, ..., Tn] to indicate a tuple type or T1 | T2 to indicate a union type (reportInvalidTypeForm)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_motion_detector.py:24:28 - error: Cannot assign to attribute "head_MotionDetector" for class "type[DeviceSensorTester]"
+    Expression of type "Self@DeviceMotionDetector" cannot be assigned to attribute "head_MotionDetector" of class "DeviceSensorTester"
+      "DeviceMotionDetector*" is not assignable to "None" (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_motion_detector.py:25:28 - error: Cannot assign to attribute "head_motion_detector" for class "type[DeviceSensorTester]"
+    Expression of type "Self@DeviceMotionDetector" cannot be assigned to attribute "head_motion_detector" of class "DeviceSensorTester"
+      "DeviceMotionDetector*" is not assignable to "None" (reportAttributeAccessIssue)
+/home/Nakeeb/Work/safehome/SafeHome/src/device/device_sensor_tester.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_sensor_tester.py:42:23 - error: "_default_root" is not a known attribute of module "tkinter" (reportAttributeAccessIssue)
+/home/Nakeeb/Work/safehome/SafeHome/src/device/device_windoor_sensor.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_windoor_sensor.py:24:28 - error: Cannot assign to attribute "head_WinDoorSensor" for class "type[DeviceSensorTester]"
+    Expression of type "Self@DeviceWinDoorSensor" cannot be assigned to attribute "head_WinDoorSensor" of class "DeviceSensorTester"
+      "DeviceWinDoorSensor*" is not assignable to "None" (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/device/device_windoor_sensor.py:25:28 - error: Cannot assign to attribute "head_windoor_sensor" for class "type[DeviceSensorTester]"
+    Expression of type "Self@DeviceWinDoorSensor" cannot be assigned to attribute "head_windoor_sensor" of class "DeviceSensorTester"
+      "DeviceWinDoorSensor*" is not assignable to "None" (reportAttributeAccessIssue)
+/home/Nakeeb/Work/safehome/SafeHome/src/example/example_all_sensors.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/example/example_all_sensors.py:45:18 - error: Arguments missing for parameters "x", "y" (reportCallIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/example/example_all_sensors.py:48:18 - error: Arguments missing for parameters "x", "y" (reportCallIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/example/example_all_sensors.py:51:18 - error: Arguments missing for parameters "x", "y" (reportCallIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/example/example_all_sensors.py:62:15 - error: Arguments missing for parameters "start", "end" (reportCallIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/example/example_all_sensors.py:65:15 - error: Arguments missing for parameters "start", "end" (reportCallIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/example/example_all_sensors.py:68:15 - error: Arguments missing for parameters "start", "end" (reportCallIssue)
+/home/Nakeeb/Work/safehome/SafeHome/src/example/example_camera.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/example/example_camera.py:81:16 - error: Cannot assign to attribute "_current_photo" for class "Canvas"
+    Attribute "_current_photo" is unknown (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/example/example_camera.py:167:24 - error: Cannot assign to attribute "_current_photo" for class "Canvas"
+    Attribute "_current_photo" is unknown (reportAttributeAccessIssue)
+/home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:69:71 - error: Argument of type "int | None" cannot be assigned to parameter "camera_id" of type "int" in function "pan_left"
+    Type "int | None" is not assignable to type "int"
+      "None" is not assignable to "int" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:75:72 - error: Argument of type "int | None" cannot be assigned to parameter "camera_id" of type "int" in function "pan_right"
+    Type "int | None" is not assignable to type "int"
+      "None" is not assignable to "int" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:88:70 - error: Argument of type "int | None" cannot be assigned to parameter "camera_id" of type "int" in function "zoom_in"
+    Type "int | None" is not assignable to type "int"
+      "None" is not assignable to "int" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:94:71 - error: Argument of type "int | None" cannot be assigned to parameter "camera_id" of type "int" in function "zoom_out"
+    Type "int | None" is not assignable to type "int"
+      "None" is not assignable to "int" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:122:32 - error: Argument of type "int | None" cannot be assigned to parameter "tagOrId" of type "str | int" in function "itemconfigure"
+    Type "int | None" is not assignable to type "str | int"
+      Type "None" is not assignable to type "str | int"
+        "None" is not assignable to "str"
+        "None" is not assignable to "int" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:123:21 - error: Cannot assign to attribute "_cached_image" for class "Canvas"
+    Attribute "_cached_image" is unknown (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:147:68 - error: Argument of type "int | None" cannot be assigned to parameter "camera_id" of type "int" in function "get_single_view"
+    Type "int | None" is not assignable to type "int"
+      "None" is not assignable to "int" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:152:36 - error: Argument of type "int | None" cannot be assigned to parameter "tagOrId" of type "str | int" in function "itemconfigure"
+    Type "int | None" is not assignable to type "str | int"
+      Type "None" is not assignable to type "str | int"
+        "None" is not assignable to "str"
+        "None" is not assignable to "int" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:153:25 - error: Cannot assign to attribute "_cached_image" for class "Canvas"
+    Attribute "_cached_image" is unknown (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:159:53 - error: Cannot access attribute "get_zoom" for class "CameraController"
+    Attribute "get_zoom" is unknown (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_cameraview.py:164:52 - error: Cannot access attribute "get_pan" for class "CameraController"
+    Attribute "get_pan" is unknown (reportAttributeAccessIssue)
+/home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_configuration.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_configuration.py:157:32 - error: Argument of type "Tk" cannot be assigned to parameter "parent" of type "Widget" in function "__init__"
+    "Tk" is not assignable to "Widget" (reportArgumentType)
+/home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_intrusionlog.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_intrusionlog.py:81:20 - error: "None" is not iterable
+    "__iter__" method not defined (reportGeneralTypeIssues)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_intrusionlog.py:93:24 - error: Argument of type "Tk" cannot be assigned to parameter "parent" of type "Widget" in function "__init__"
+    "Tk" is not assignable to "Widget" (reportArgumentType)
+/home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_main.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_main.py:88:37 - error: Argument of type "Self@GUIMain" cannot be assigned to parameter "cnf" of type "dict[str, Any] | None" in function "__init__"
+    Type "Self@GUIMain" is not assignable to type "dict[str, Any] | None"
+      "GUIMain*" is not assignable to "dict[str, Any]"
+      "GUIMain*" is not assignable to "None" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_main.py:103:26 - error: Argument of type "Literal['']" cannot be assigned to parameter "menu" of type "Menu" in function "configure"
+    "Literal['']" is not assignable to "Menu" (reportArgumentType)
+/home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_securitymode.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_securitymode.py:245:29 - error: Argument of type "Tk" cannot be assigned to parameter "parent" of type "Widget" in function "__init__"
+    "Tk" is not assignable to "Widget" (reportArgumentType)
+/home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_securityzone.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_securityzone.py:293:9 - error: Argument of type "Unknown | None" cannot be assigned to parameter "key" of type "str" in function "__getitem__"
+    Type "Unknown | None" is not assignable to type "str"
+      "None" is not assignable to "str" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_securityzone.py:294:9 - error: Argument of type "Unknown | None" cannot be assigned to parameter "key" of type "str" in function "__getitem__"
+    Type "Unknown | None" is not assignable to type "str"
+      "None" is not assignable to "str" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_securityzone.py:351:9 - error: Argument of type "Unknown | None" cannot be assigned to parameter "key" of type "str" in function "__getitem__"
+    Type "Unknown | None" is not assignable to type "str"
+      "None" is not assignable to "str" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_securityzone.py:352:9 - error: Argument of type "Unknown | None" cannot be assigned to parameter "key" of type "str" in function "__getitem__"
+    Type "Unknown | None" is not assignable to type "str"
+      "None" is not assignable to "str" (reportArgumentType)
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_securityzone.py:445:29 - error: Argument of type "Tk" cannot be assigned to parameter "parent" of type "Widget" in function "__init__"
+    "Tk" is not assignable to "Widget" (reportArgumentType)
+/home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_surveillance.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_surveillance.py:329:26 - error: Argument of type "Tk" cannot be assigned to parameter "parent" of type "Widget" in function "__init__"
+    "Tk" is not assignable to "Widget" (reportArgumentType)
+/home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_thumbnails.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/gui/gui_thumbnails.py:87:27 - error: Argument of type "Tk" cannot be assigned to parameter "parent" of type "Widget" in function "__init__"
+    "Tk" is not assignable to "Widget" (reportArgumentType)
+/home/Nakeeb/Work/safehome/SafeHome/src/main.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/main.py:20:12 - error: Cannot assign to attribute "current_control_panel" for class "System"
+    Expression of type "GUIControlPanel" cannot be assigned to attribute "current_control_panel" of class "System"
+      "GUIControlPanel" is not assignable to "None" (reportAttributeAccessIssue)
+  /home/Nakeeb/Work/safehome/SafeHome/src/main.py:21:12 - error: Cannot assign to attribute "current_app" for class "System"
+    Expression of type "GUIMain" cannot be assigned to attribute "current_app" of class "System"
+      "GUIMain" is not assignable to "None" (reportAttributeAccessIssue)
+/home/Nakeeb/Work/safehome/SafeHome/src/storage/control_panel_setting_storage_memory.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/storage/control_panel_setting_storage_memory.py:8:9 - error: Method "get_master_password" overrides class "IControlPanelSettingsDB" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "str | Unknown"
+      Type "str | Unknown" is not assignable to type "None"
+        "str" is not assignable to "None" (reportIncompatibleMethodOverride)
+  /home/Nakeeb/Work/safehome/SafeHome/src/storage/control_panel_setting_storage_memory.py:14:9 - error: Method "get_guest_password" overrides class "IControlPanelSettingsDB" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "str | Unknown"
+      Type "str | Unknown" is not assignable to type "None"
+        "str" is not assignable to "None" (reportIncompatibleMethodOverride)
+/home/Nakeeb/Work/safehome/SafeHome/src/storage/log_storage_memory.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/storage/log_storage_memory.py:18:9 - error: Method "get_log_list" overrides class "ILogDB" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "list[Unknown]"
+      "list[Unknown]" is not assignable to "None" (reportIncompatibleMethodOverride)
+/home/Nakeeb/Work/safehome/SafeHome/src/storage/log_storage_sqlite.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/storage/log_storage_sqlite.py:16:76 - error: "isoformat" is not a known attribute of "None" (reportOptionalMemberAccess)
+  /home/Nakeeb/Work/safehome/SafeHome/src/storage/log_storage_sqlite.py:18:9 - error: Method "get_log_list" overrides class "ILogDB" in an incompatible manner
+    Return type mismatch: base method returns type "None", override returns type "list[Unknown]"
+      "list[Unknown]" is not assignable to "None" (reportIncompatibleMethodOverride)
+/home/Nakeeb/Work/safehome/SafeHome/src/storage/storage_sqlite.py
+  /home/Nakeeb/Work/safehome/SafeHome/src/storage/storage_sqlite.py:22:21 - error: "cur" is possibly unbound (reportPossiblyUnboundVariable)
+  /home/Nakeeb/Work/safehome/SafeHome/src/storage/storage_sqlite.py:42:17 - error: "cur" is possibly unbound (reportPossiblyUnboundVariable)
+73 errors, 1 warning, 0 informations
